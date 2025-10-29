@@ -15,23 +15,46 @@
         text-decoration : none;
      }
     body{
-        font-family: calibri; background-color: pink;
+        font-family: calibri;
+        background-color: pink;
      }
-    .navbar{
-        background-color: rgb(150, 80, 92); padding: 10px 20px;
+    header{
+        background-color: rgb(150, 80, 92);
+        padding: 10px;
+        display: flex; 
+        align-items: center; 
+        gap: 20px;
      }
-    .navdiv{
-        display: flex; align-items: center; justify-content: space-between;
+    header img{
+        width: 50px; 
+        height: 50px;
      }
-    .logo {
-      display: flex; align-items: center;
+    nav{
+        display: flex; 
+        justify-content: center; 
+        gap: 20px; 
+        list-style: none;
      }
-    .logo img{
-      margin-right: 10px;
+    nav a{
+        color: white; 
+        text-decoration: none; 
+        font-size: 20px; 
+        font-weight: bold; 
+        padding: 5px 10px; 
+        border-radius: 5px; 
+        transition: background-color 0.3s, color 0.3s;
      }
-    .logo a{
-      color: white; font-size: 24px; font-weight: bold;
+    nav a:hover{
+        text-decoration: underline; 
+        color: lightpink; 
+        font-size: 18px;
      }
+    iframe{
+        display: block; 
+        margin: 30px auto; 
+        border-radius: 8px; 
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
     ul{
       list-style-type: none;
      }
@@ -39,10 +62,14 @@
       display: inline-block;
      }
     li a{
-      color: white; font-size: 18px; font-weight: bold; margin-right: 20px;
+      color: white; 
+      font-size: 18px; 
+      font-weight: bold; 
+      margin-right: 20px;
      }
     h1, h2{
-      text-align: center; margin-top: 30px;
+      text-align: center; 
+      margin-top: 30px;
      }
     #main:hover{
       background-color: lightpink;
@@ -51,8 +78,13 @@
       color:rgb(150, 80, 92);
      }
     #main{
-      display:block; margin: 20px auto; max-width: 90%; text-align: justify;
-      display: flex; flex-direction: column; gap: 15px;
+      display:block; 
+      margin: 20px auto; 
+      max-width: 90%; 
+      text-align: justify;
+      display: flex; 
+      flex-direction: column; 
+      gap: 15px;
       float: center;
      }
     table{
@@ -76,17 +108,15 @@
 
 </style>
 </head>
-<body>  
-    <nav class = "navbar">
-    <div class="logo"> <img src="../assets/sillycat.jpg" alt="Logo" width="50" height="50"></a>
-    
-    <ul>        
-    <li><a href="https://keysha-crystalballs.github.io/2QPortfolioLiCristoball/public/2G1LiCristobal.html"> Cat Memes </a></li>
-    <li><a href="https://emmanovales.github.io/2QPortfolioLiNovales/2QPortfolioLiNovales/public/2Q1GLithiumNovales.html"> Cat Breeds</a></li>
-    <a href="../index.html"> Home </a>
-    </ul>   
-    </div>
-    </nav>
+<body> 
+    <header>
+        <img src="../assets/sillycat.jpg" alt="cat icon">
+        <nav> 
+            <a href="https://keysha-crystalballs.github.io/2QPortfolioLiCristoball/public/2G1LiCristobal.html"> Cat Memes </a></li>
+            <a href="https://emmanovales.github.io/2QPortfolioLiNovales/2QPortfolioLiNovales/public/2Q1GLithiumNovales.html"> Cat Breeds</a></li>
+            <a href="../index.html"> Home </a>  
+        </nav>
+    </header> 
 
     <div class = "card">
     <h1>Why We Love Cats!</h1>
